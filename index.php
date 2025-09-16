@@ -7,7 +7,7 @@
     <section class="secao-principal d-flex justify-content-center align-items-center text-center">
         <div class="container">
             <h1 class="display-3">BIG HEAD TATTOO</h1>
-            <a href="agenda.html" class="btn btn-outline-light btn-lg mt-3">VER AGENDA</a>
+            <a href="agenda.php" class="btn btn-outline-light btn-lg mt-3">VER AGENDA</a>
         </div>
     </section>
 
@@ -28,7 +28,7 @@
             <div class="col-md-4"><div class="destaque-portfolio-imagem"></div></div>
             <div class="col-md-4"><div class="destaque-portfolio-imagem"></div></div>
         </div>
-        <a href="portfolio.html" class="btn btn-outline-light mt-4">VER PORTFÓLIO COMPLETO</a>
+        <a href="portfolio.php" class="btn btn-outline-light mt-4">VER PORTFÓLIO COMPLETO</a>
     </section>
 </main>
 
