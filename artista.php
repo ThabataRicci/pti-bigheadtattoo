@@ -11,7 +11,7 @@
             </div>
             <div class="col-md-8">
                 <h2 class="display-4">DANIEL KBÇA</h2>
-                <p class="especialidades-artista">Especialidades: Maori, Geométrico</p>
+                <p class="especialidades-artista">Especialidades: Maori, Geométrico, Escrita</p>
                 <p>Apaixonado por transformar ideias em arte na pele, Daniel Kbça construiu sua trajetória unindo técnica, criatividade e atenção aos detalhes. No estúdio, cada trabalho é pensado junto com o cliente, respeitando seu estilo e valorizando a originalidade. Seja em traços finos ou projetos maiores, a prioridade é sempre entregar uma tatuagem única, feita com cuidado e profissionalismo.</p>
             </div>
         </div>
