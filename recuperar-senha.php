@@ -1,4 +1,5 @@
 <?php
+    session_start();
     $titulo_pagina = "Recuperar Senha";
     include 'includes/header.php';
 ?>

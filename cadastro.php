@@ -1,4 +1,5 @@
 <?php
+    session_start();
     $titulo_pagina = "Cadastro";
     include 'includes/header.php';
 ?>

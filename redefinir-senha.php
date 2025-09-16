@@ -1,4 +1,5 @@
 <?php
+    session_start();
     $titulo_pagina = "Redefinir Senha";
     include 'includes/header.php';
 ?>

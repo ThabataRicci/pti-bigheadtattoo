@@ -1,4 +1,5 @@
 <?php
+    session_start();
     $titulo_pagina = "O Artista";
     include 'includes/header.php';
 ?>

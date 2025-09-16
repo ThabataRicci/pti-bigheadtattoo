@@ -1,4 +1,5 @@
 <?php
+    session_start();
     $titulo_pagina = "Portfólio";
     include 'includes/header.php';
 ?>
