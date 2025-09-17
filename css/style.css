@@ -62,7 +62,7 @@ footer {
 /* 9 - ESTILOS PARA OS FORMULARIOS (LOGIN, CADASTRO ETC)  */
 .formulario-container {
     background-color: #1c1c1c;
-    padding: 2rem;
+    padding: 32px;
     border: 1px solid #444;
     border-radius: 8px;
 }
@@ -111,7 +111,7 @@ footer {
     opacity: 0;
     transition: opacity 0.5s ease;
     text-align: center;
-    padding: 1rem;
+    padding: 16px;
 }
 
 .portfolio-item:hover .portfolio-detalhes-overlay {
@@ -130,7 +130,7 @@ footer {
 
 .detalhes-info {
     margin: 2px 0;
-    font-size: 0.9rem;
+    font-size: 14px;
 }
 
 .pagination .page-link {
@@ -153,7 +153,7 @@ footer {
 /* 11 - ESTILOS DA PÁGINA DE AGENDA */
 .calendario-container {
     background-color: #1c1c1c;
-    padding: 2rem;
+    padding: 32px;
     border: 1px solid #444;
     border-radius: 8px;
 }
@@ -169,7 +169,7 @@ footer {
 }
 
 .dia, .dia-semana {
-    padding: 1rem;
+    padding: 16px;
     text-align: center;
     border-radius: 4px;
     min-height: 100px;
@@ -214,15 +214,15 @@ footer {
 /* 12 - ESTILOS DA DASHBOARD DO CLIENTE */
 .submenu-cliente {
     background-color: #1c1c1c;
-    padding: 0.5rem 0;
+    padding: 8px 0;
     border-bottom: 1px solid #444;
 }
 
 .submenu-cliente a {
     color: #c0c0c0;
     text-decoration: none;
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
+    padding: 8px 16px;
+    font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -235,24 +235,45 @@ footer {
     background-color: #1c1c1c;
     border: 1px solid #444;
     border-radius: 8px;
-    padding: 1.5rem;
-    margin-bottom: 1rem;
+    padding: 24px;
+    margin-bottom: 24px;
 }
 
-/* 13 - ESTILOS DA BARRA DE USUÁRIO (LOGADO) */
-.barra-usuario {
-    background-color: #000; 
-    padding: 0.25rem 0;
-    font-size: 0.8rem;
+/* 13 - ESTILOS DO ACORDEÃO */
+.accordion-item {
+    background-color: #1c1c1c;
+    border: 1px solid #444;
 }
 
-.barra-usuario a {
-    color: #c0c0c0;
-    text-decoration: none;
-    margin-left: 1rem;
+.accordion-button {
+    background-color: #2c2c2c;
+    color: #F5F5F5;
 }
 
-.barra-usuario a:hover {
+.accordion-button strong {
+    font-size: 18px;  
+}
+
+.accordion-button span {
+    font-size: 18px; 
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #333;
     color: #fff;
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: #444;
+}
+
+.accordion-button::after {
+    filter: invert(1) grayscale(100%);
+}
+
+.accordion-body {
+    color: #e0e0e0; 
 }
 
