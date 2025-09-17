@@ -277,3 +277,29 @@ footer {
     color: #e0e0e0; 
 }
 
+/* 16 - ESTILOS DA JANELA MODAL */
+.modal-content {
+    background-color: #1c1c1c;
+    border: 1px solid #444;
+}
+
+.modal-header {
+    border-bottom: 1px solid #444;
+}
+
+.modal-footer {
+    border-top: 1px solid #444;
+}
+
+/* Deixa os botões da modal com o estilo do site */
+.modal-footer .btn-primary {
+    background-color: #F5F5F5;
+    color: #121212;
+    border-color: #F5F5F5;
+    font-weight: 700;
+}
+
+.modal-footer .btn-secondary {
+    background-color: transparent;
+    border-color: #444;
+}
