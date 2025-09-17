@@ -291,7 +291,6 @@ footer {
     border-top: 1px solid #444;
 }
 
-/* Deixa os botões da modal com o estilo do site */
 .modal-footer .btn-primary {
     background-color: #F5F5F5;
     color: #121212;
@@ -302,4 +301,20 @@ footer {
 .modal-footer .btn-secondary {
     background-color: transparent;
     border-color: #444;
+}
+
+/* 17 - ESTILO DO BOTÃO PRIMÁRIO */
+.btn-primary {
+    background-color: #F5F5F5;
+    color: #121212;
+    border-color: #F5F5F5;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-primary:hover {
+    background-color: #c0c0c0;
+    border-color: #c0c0c0;
+    color: #121212;
 }

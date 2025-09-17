@@ -1,5 +1,10 @@
 <?php
     session_start();
+    
+     $_SESSION['loggedin'] = true;
+    $_SESSION['nome'] = "xxxxxxxxxxxxxxxxx"; 
+    $_SESSION['user_role'] = "cliente";
+
     $titulo_pagina = "Meu Painel";
     include 'includes/header.php';
 ?>
@@ -7,7 +12,7 @@
 <main>
     <div class="container my-5 py-5">
         <div class="text-center">
-            <h2 class="display-5">Bem-vindo(a) de volta, [NOME]!</h2>
+            <h2 class="display-5">Bem-vindo(a) de volta!!</h2>
         </div>
 
         <hr class="my-5">
