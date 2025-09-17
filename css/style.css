@@ -40,31 +40,17 @@ h2, .logo-cabecalho {
     width: auto;  
 }
 
-/* 7 - ESTILOS DOS DESTAQUES DO PORTFOLIO */
-.destaque-portfolio-imagem {
-    height: 250px; 
-    background-color: #2c2c2c;
-    border: 1px solid #444; 
-    margin-bottom: 1rem; 
-}
-
-/* 8 - ESTILOS DO RODAPE */
+/* 7 - ESTILOS DO RODAPE */
 footer {
     border-top: 1px solid #444; 
 }
 
-/* 9 - ESTILOS PAGINA ARTISTA */
+/* 8 - ESTILOS PAGINA ARTISTA */
 .especialidades-artista {
     color: #c0c0c0; 
     font-weight: 700;
     letter-spacing: 1px;
     font-style: italic;
-}
-
-.item-portfolio-artista {
-    height: 220px; 
-    background-color: #2c2c2c;
-    border: 1px solid #444; 
 }
 
 .foto-perfil-artista {
@@ -73,7 +59,7 @@ footer {
     object-fit: cover; 
 }
 
-/* 10 - ESTILOS PARA OS FORMULARIOS (LOGIN, CADASTRO ETC)  */
+/* 9 - ESTILOS PARA OS FORMULARIOS (LOGIN, CADASTRO ETC)  */
 .formulario-container {
     background-color: #1c1c1c;
     padding: 2rem;
@@ -94,7 +80,7 @@ footer {
     box-shadow: none;
 }
 
-/* 11 - ESTILOS DA PÁGINA DE PORTFÓLIO */
+/* 10 - ESTILOS DA PÁGINA DE PORTFÓLIO */
 .portfolio-item {
     position: relative;
     overflow: hidden;
@@ -164,7 +150,7 @@ footer {
     color: #121212;
 }
 
-/* 12 - ESTILOS DA PÁGINA DE AGENDA */
+/* 11 - ESTILOS DA PÁGINA DE AGENDA */
 .calendario-container {
     background-color: #1c1c1c;
     padding: 2rem;
@@ -225,7 +211,7 @@ footer {
     transform: scale(1.05);
 }
 
-/* 13 - ESTILOS DA DASHBOARD DO CLIENTE */
+/* 12 - ESTILOS DA DASHBOARD DO CLIENTE */
 .submenu-cliente {
     background-color: #1c1c1c;
     padding: 0.5rem 0;
@@ -253,7 +239,7 @@ footer {
     margin-bottom: 1rem;
 }
 
-/* 14 - ESTILOS DA BARRA DE USUÁRIO (LOGADO) */
+/* 13 - ESTILOS DA BARRA DE USUÁRIO (LOGADO) */
 .barra-usuario {
     background-color: #000; 
     padding: 0.25rem 0;

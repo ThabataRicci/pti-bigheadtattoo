@@ -19,12 +19,42 @@
         <hr class="my-5">
         <div class="text-center">
             <h2 class="mb-5">TRABALHOS DO ARTISTA</h2>
-            <div class="row">
-                <div class="col-md-3 mb-4"><div class="item-portfolio-artista"></div></div>
-                <div class="col-md-3 mb-4"><div class="item-portfolio-artista"></div></div>
+    <div class="row">
+        <div class="col-lg-3 col-md-4 col-6 mb-4">
+            <div class="portfolio-item">
+                <img src="imagens/exemplo1.jpg">
+                <div class="portfolio-detalhes-overlay">
+                    <h5 class="detalhes-titulo">Dragão</h5>
+                    <p class="detalhes-info">Estilo: Oriental</p>
+                    <p class="detalhes-info">Tempo: 6 horas</p>
+                    <p class="detalhes-info">Local: Costas</p>
                 </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 mb-4">
+            <div class="portfolio-item">
+                <img src="imagens/exemplo2.jpg">
+                <div class="portfolio-detalhes-overlay">
+                    <h5 class="detalhes-titulo">Rosa</h5>
+                    <p class="detalhes-info">Estilo: Fineline</p>
+                    <p class="detalhes-info">Tempo: 6 horas</p>
+                    <p class="detalhes-info">Local: Braço</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 mb-4">
+            <div class="portfolio-item"></div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 mb-4">
+            <div class="portfolio-item"></div>
+        </div>
         </div>
     </div>
+
+    <div class="d-flex justify-content-center mt-4">
+        <a href="portfolio.php" class="btn btn-outline-light">VER PORTFÓLIO COMPLETO</a>
+    </div>
+
 </main>
 
 <?php
