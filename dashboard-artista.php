@@ -18,7 +18,7 @@ include 'includes/header.php';
             <div class="col-md-4 mb-4">
                 <div class="card-resumo">
                     <h3>[X]</h3>
-                    <p class="text-white-50 mb-0">Agendamentos para Aprovar</p>
+                    <p class="text-white-50 mb-0">Solicitações para Aprovar</p>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
@@ -41,7 +41,7 @@ include 'includes/header.php';
             <div class="col-md-6 mb-4">
                 <div class="card-resumo">
                     <h4>Gerenciar Agenda</h4>
-                    <p class="text-white-50">Você tem X agendamentos para aprovar.</p>
+                    <p class="text-white-50">Você tem X solicitações para aprovar.</p>
                     <a href="agenda-artista.php" class="btn btn-outline-light">Ver Agenda</a>
                 </div>
             </div>
@@ -55,14 +55,14 @@ include 'includes/header.php';
             <div class="col-md-6 mb-4">
                 <div class="card-resumo">
                     <h4>Relatórios</h4>
-                    <p class="text-white-50">Acompanhe o desempenho do seu trabalho.</p>
+                    <p class="text-white-50">Acompanhe os clientes cadastrados.</p>
                     <a href="relatorios-artista.php" class="btn btn-outline-light">Acessar Relatórios</a>
                 </div>
             </div>
             <div class="col-md-6 mb-4">
                 <div class="card-resumo">
                     <h4>Configurações</h4>
-                    <p class="text-white-50">Gerencie seu perfil, estilos e clientes.</p>
+                    <p class="text-white-50">Gerencie seu perfil e estilos.</p>
                     <a href="configuracoes-artista.php" class="btn btn-outline-light">Acessar Configurações</a>
                 </div>
             </div>

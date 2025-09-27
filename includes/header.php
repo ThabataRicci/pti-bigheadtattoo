@@ -39,8 +39,16 @@
             <div class="container">
                 <ul class="navbar-nav d-flex flex-row align-items-center position-absolute end-0 me-3">
                     <?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true): ?>
+                        <?php
+                        // Verifica o tipo de usuário e define a URL de configurações
+                        if ($_SESSION['user_role'] == 'cliente') {
+                            $config_url = 'configuracoes-cliente.php'; // Página de configurações para clientes
+                        } elseif ($_SESSION['user_role'] == 'artista') {
+                            $config_url = 'configuracoes-artista.php'; // Página de configurações para tatuadores
+                        }
+                        ?>
                         <li class="nav-item">
-                            <a class="nav-link me-2" href="configuracoes.php" title="Configurações">
+                            <a class="nav-link me-2" href="<?php echo $config_url; ?>" title="Configurações">
                                 <i class="bi bi-gear-fill fs-5"></i>
                             </a>
                         </li>
@@ -54,9 +62,6 @@
                     <?php endif; ?>
                 </ul>
             </div>
-        </nav>
-
-        </div>
         </nav>
     </header>
 
@@ -85,3 +90,6 @@
         <?php endif; ?>
 
     <?php endif; ?>
+</body>
+
+</html>
