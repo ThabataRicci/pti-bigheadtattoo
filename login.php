@@ -1,14 +1,14 @@
 <?php
-    session_start();
-    $titulo_pagina = "Login";
-    include 'includes/header.php';
+session_start();
+$titulo_pagina = "Login";
+include 'includes/header.php';
 ?>
 
 <main>
     <div class="container my-5 py-5">
         <div class="row justify-content-center">
             <div class="col-md-6 col-lg-5">
-                
+
                 <h2 class="text-center mb-4">ACESSAR SUA CONTA</h2>
 
                 <form class="formulario-container">
@@ -21,7 +21,7 @@
                         <label for="senha" class="form-label">Senha:</label>
                         <input type="password" class="form-control" id="senha" required>
                         <div class="text-left mt-3">
-                        <a href="recuperar-senha.php" class="text-white-50 small">Esqueci minha senha</a>
+                            <a href="recuperar-senha.php" class="text-white-50 small">Esqueci minha senha</a>
                         </div>
                     </div>
 
@@ -40,5 +40,5 @@
 </main>
 
 <?php
-    include 'includes/footer.php';
+include 'includes/footer.php';
 ?>

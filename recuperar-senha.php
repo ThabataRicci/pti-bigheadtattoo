@@ -1,14 +1,14 @@
 <?php
-    session_start();
-    $titulo_pagina = "Recuperar Senha";
-    include 'includes/header.php';
+session_start();
+$titulo_pagina = "Recuperar Senha";
+include 'includes/header.php';
 ?>
 
 <main>
     <div class="container my-5 py-5">
         <div class="row justify-content-center">
             <div class="col-md-6 col-lg-5">
-                
+
                 <h2 class="text-center mb-4">RECUPERAR SENHA</h2>
                 <p class="text-center text-white-50 mb-4">Digite seu e-mail abaixo e enviaremos um link para você criar uma nova senha.</p>
 
@@ -29,5 +29,5 @@
 </main>
 
 <?php
-    include 'includes/footer.php';
+include 'includes/footer.php';
 ?>

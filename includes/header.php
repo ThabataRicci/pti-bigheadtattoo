@@ -2,6 +2,7 @@
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,30 +11,35 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<header class="p-3">
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-            <a class="navbar-brand logo-cabecalho" href="index.php">
-                <img src="imagens/logo.png" alt="Logo Big Head Tattoo">
-            </a>
+    <header class="p-3">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand logo-cabecalho" href="index.php">
+                    <img src="imagens/logo.png" alt="Logo Big Head Tattoo">
+                </a>
+            </div>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="menuPrincipal">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link" href="portfolio.php">Portfólio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="artista.php">O Artista</a></li>
-                    
-                    <?php if (isset($_SESSION['user_role']) && $_SESSION['user_role'] == 'tatuador'): ?>
-                        <li class="nav-item"><a class="nav-link" href="dashboard-tatuador.php">Meu Painel</a></li>
-                    <?php else: ?>
-                        <li class="nav-item"><a class="nav-link" href="agenda.php">Agenda</a></li>
-                    <?php endif; ?>
-                </ul>
 
-                <ul class="navbar-nav d-flex flex-row align-items-center">
+            <!-- Barra de navegação ocupa toda largura -->
+            <div class="container-fluid px-0">
+                <div class="collapse navbar-collapse justify-content-center" id="menuPrincipal">
+                    <ul class="navbar-nav d-flex justify-content-center gap-4 w-100" style="max-width: 500px; margin: 0 auto;">
+                        <li class="nav-item"><a class="nav-link" href="portfolio.php">Portfólio</a></li>
+                        <li class="nav-item"><a class="nav-link text-center" href="artista.php">O Artista</a></li>
+                        <li class="nav-item"><a class="nav-link" href="agenda.php">Agenda</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Container para ícones/login -->
+            <div class="container">
+                <ul class="navbar-nav d-flex flex-row align-items-center position-absolute end-0 me-3">
                     <?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true): ?>
                         <li class="nav-item">
                             <a class="nav-link me-2" href="configuracoes.php" title="Configurações">
@@ -50,15 +56,34 @@
                     <?php endif; ?>
                 </ul>
             </div>
-        </div>
-    </nav>
-</header>
+        </nav>
 
-<?php if (isset($_SESSION['loggedin']) && $_SESSION['user_role'] == 'cliente'): ?>
-    <div class="submenu-cliente">
-        <div class="container d-flex justify-content-center">
-            <a href="dashboard-cliente.php">Painel Inicial</a>
-            <a href="agendamentos-cliente.php">Agendamentos</a>
         </div>
-    </div>
-<?php endif; ?>
+        </nav>
+    </header>
+
+    <?php // LÓGICA DOS SUB-MENUS
+    if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true):
+
+        // se for CLIENTE, mostra o sub-menu do cliente
+        if ($_SESSION['user_role'] == 'cliente'): ?>
+            <div class="submenu-painel">
+                <div class="container d-flex justify-content-center">
+                    <a href="dashboard-cliente.php">Painel Inicial</a>
+                    <a href="agendamentos-cliente.php">Agendamentos</a>
+                </div>
+            </div>
+
+        <?php // se for ARTISTA, mostra o sub-menu do artista
+        elseif ($_SESSION['user_role'] == 'artista'): ?>
+            <div class="submenu-painel">
+                <div class="container d-flex justify-content-center">
+                    <a href="dashboard-artista.php">Painel Inicial</a>
+                    <a href="agenda-artista.php">Gerenciar Agenda</a>
+                    <a href="portfolio-artista.php">Gerenciar Portfólio</a>
+                    <a href="relatorios-artista.php">Relatórios</a>
+                </div>
+            </div>
+        <?php endif; ?>
+
+    <?php endif; ?>

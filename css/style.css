@@ -3,13 +3,14 @@
 
 /* 2 - ESTILOS GERAIS */
 body {
-    background-color: #121212; 
+    background-color: #121212;
     color: #F5F5F5;
     font-family: 'Montserrat', sans-serif;
 }
 
 /* 3 - ESTILOS DE ESCRITA */
-h2, .logo-cabecalho {
+h2,
+.logo-cabecalho {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
 }
@@ -21,7 +22,7 @@ h2, .logo-cabecalho {
 
 /* 4 - SECAO PRINCIPAL */
 .secao-principal {
-    min-height: 80vh; 
+    min-height: 80vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../imagens/foto_principal.jpg");
     background-size: cover;
     background-position: center;
@@ -36,27 +37,27 @@ h2, .logo-cabecalho {
 
 /* 6 - ESTILO DA LOGO NO CABECALHO */
 .navbar-brand img {
-    height: 70px; 
-    width: auto;  
+    height: 70px;
+    width: auto;
 }
 
 /* 7 - ESTILOS DO RODAPE */
 footer {
-    border-top: 1px solid #444; 
+    border-top: 1px solid #444;
 }
 
 /* 8 - ESTILOS PAGINA ARTISTA */
 .especialidades-artista {
-    color: #c0c0c0; 
+    color: #c0c0c0;
     font-weight: 700;
     letter-spacing: 1px;
     font-style: italic;
 }
 
 .foto-perfil-artista {
-    max-width: 300px; 
-    height: 250px;    
-    object-fit: cover; 
+    max-width: 300px;
+    height: 250px;
+    object-fit: cover;
 }
 
 /* 9 - ESTILOS PARA OS FORMULARIOS (LOGIN, CADASTRO ETC)  */
@@ -164,11 +165,12 @@ footer {
 
 .calendario-grid {
     display: grid;
-    grid-template-columns: repeat(7, 1fr); 
-    gap: 5px; 
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
 }
 
-.dia, .dia-semana {
+.dia,
+.dia-semana {
     padding: 16px;
     text-align: center;
     border-radius: 4px;
@@ -211,14 +213,19 @@ footer {
     transform: scale(1.05);
 }
 
-/* 12 - ESTILOS DA DASHBOARD DO CLIENTE */
-.submenu-cliente {
+/* 12 - ESTILOS DO HEADER E SUBMENU */
+.navbar-nav .nav-link.text-center {
+    text-align: center;
+    display: block;
+}
+
+.submenu-painel {
     background-color: #1c1c1c;
     padding: 8px 0;
     border-bottom: 1px solid #444;
 }
 
-.submenu-cliente a {
+.submenu-painel a {
     color: #c0c0c0;
     text-decoration: none;
     padding: 8px 16px;
@@ -227,10 +234,11 @@ footer {
     letter-spacing: 1px;
 }
 
-.submenu-cliente a:hover {
+.submenu-painel a:hover {
     color: #fff;
 }
 
+/* PAGINA CLIENTE */
 .card-resumo {
     background-color: #1c1c1c;
     border: 1px solid #444;
@@ -251,11 +259,11 @@ footer {
 }
 
 .accordion-button strong {
-    font-size: 18px;  
+    font-size: 18px;
 }
 
 .accordion-button span {
-    font-size: 18px; 
+    font-size: 18px;
 }
 
 .accordion-button:not(.collapsed) {
@@ -274,7 +282,7 @@ footer {
 }
 
 .accordion-body {
-    color: #e0e0e0; 
+    color: #e0e0e0;
 }
 
 /* 16 - ESTILOS DA JANELA MODAL */

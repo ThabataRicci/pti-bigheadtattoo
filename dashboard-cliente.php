@@ -1,21 +1,18 @@
 <?php
-    session_start();
-    
-     $_SESSION['loggedin'] = true;
-    $_SESSION['nome'] = "xxxxxxxxxxxxxxxxx"; 
-    $_SESSION['user_role'] = "cliente";
+session_start();
 
-    $titulo_pagina = "Meu Painel";
-    include 'includes/header.php';
+$_SESSION['loggedin'] = true;
+$_SESSION['nome'] = "xxxxxxxxxxxxxxxxx";
+$_SESSION['user_role'] = "cliente";
+
+$titulo_pagina = "Meu Painel";
+include 'includes/header.php';
 ?>
 
 <main>
     <div class="container my-5 py-5">
         <div class="text-center">
-            <h2 class="display-5">Bem-vindo(a) de volta!!</h2>
         </div>
-
-        <hr class="my-5">
 
         <div class="row">
             <div class="col-md-5 mb-4">
@@ -40,5 +37,5 @@
 </main>
 
 <?php
-    include 'includes/footer.php';
+include 'includes/footer.php';
 ?>
