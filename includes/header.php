@@ -26,7 +26,6 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!-- Barra de navegação ocupa toda largura -->
             <div class="container-fluid px-0">
                 <div class="collapse navbar-collapse justify-content-center" id="menuPrincipal">
                     <ul class="navbar-nav d-flex justify-content-center gap-4 w-100" style="max-width: 500px; margin: 0 auto;">
@@ -37,7 +36,6 @@
                 </div>
             </div>
 
-            <!-- Container para ícones/login -->
             <div class="container">
                 <ul class="navbar-nav d-flex flex-row align-items-center position-absolute end-0 me-3">
                     <?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true): ?>
@@ -62,10 +60,10 @@
         </nav>
     </header>
 
-    <?php // LÓGICA DOS SUB-MENUS
+    <?php // LÓGICA DOS SUBMENUS
     if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true):
 
-        // se for CLIENTE, mostra o sub-menu do cliente
+        // se for CLIENTE, mostra o submenu do cliente
         if ($_SESSION['user_role'] == 'cliente'): ?>
             <div class="submenu-painel">
                 <div class="container d-flex justify-content-center">
@@ -74,7 +72,7 @@
                 </div>
             </div>
 
-        <?php // se for ARTISTA, mostra o sub-menu do artista
+        <?php // se for ARTISTA, mostra o submenu do artista
         elseif ($_SESSION['user_role'] == 'artista'): ?>
             <div class="submenu-painel">
                 <div class="container d-flex justify-content-center">
