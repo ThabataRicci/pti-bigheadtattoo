@@ -1,12 +1,7 @@
 <?php
 session_start();
-
-$_SESSION['loggedin'] = true;
-$_SESSION['nome'] = "xxxxxxxxxxxxxxxxx";
-$_SESSION['user_role'] = "artista";
-
 $titulo_pagina = "Painel de Controle";
-include 'includes/header.php';
+include '../includes/header.php';
 ?>
 
 <main>
@@ -71,5 +66,5 @@ include 'includes/header.php';
 </main>
 
 <?php
-include 'includes/footer.php';
+include '../includes/footer.php';
 ?>

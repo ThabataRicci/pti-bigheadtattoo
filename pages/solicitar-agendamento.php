@@ -1,7 +1,7 @@
 <?php
 session_start();
 $titulo_pagina = "Solicitar Agendamento";
-include 'includes/header.php';
+include '../includes/header.php';
 
 // Pega a data da URL. É importante validar e formatar essa data quando conectar ao backend.
 $data_selecionada = $_GET['data'] ?? date('Y-m-d');
@@ -12,8 +12,8 @@ $data_formatada = date('d/m/Y', strtotime($data_selecionada));
     <div class="container my-5 py-5">
         <div class="row justify-content-center">
             <div class="col-md-8 col-lg-7">
-                <form class="formulario-container text-center" action="processa_solicitacao.php" method="POST" enctype="multipart/form-data">
-                    <h2 class="mb-3">Sua Ideia para <?php echo $data_formatada; ?></h2>
+                <form class="formulario-container text-center" action="actions/processa_solicitacao.php" method="POST" enctype="multipart/form-data">
+                    <h2 class="mb-3">Agendamento: <?php echo $data_formatada; ?></h2>
 
                     <div class="text-start">
 
@@ -56,5 +56,5 @@ $data_formatada = date('d/m/Y', strtotime($data_selecionada));
 </main>
 
 <?php
-include 'includes/footer.php';
+include '../includes/footer.php';
 ?>

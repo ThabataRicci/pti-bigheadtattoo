@@ -1,12 +1,7 @@
 <?php
 session_start();
-
-// Simula o login do cliente para teste
-$_SESSION['loggedin'] = true;
-$_SESSION['user_role'] = "cliente";
-
 $titulo_pagina = "Meus Agendamentos";
-include 'includes/header.php';
+include '../includes/header.php';
 ?>
 <main>
     <div class="container my-5 py-5">
@@ -45,7 +40,7 @@ include 'includes/header.php';
                         <p><strong>Histórico de Sessões:</strong></p>
                         <div class="p-2 mb-2 d-flex justify-content-between align-items-center">
                             <p class="mb-0 small"><strong>Sessão 1:</strong> Pendente</p>
-                            <button onclick="window.location.href='agendar-horario.php?projeto_id=456&sessao=1'" class="btn btn-sm btn-primary">Agendar</button>
+                            <button onclick="window.location.href='agenda.php'" class="btn btn-sm btn-primary">Agendar</button>
                         </div>
                         <div class="p-2 mb-2 d-flex justify-content-between align-items-center opacity-50">
                             <p class="mb-0 small"><strong>Sessão 2:</strong> Pendente</p>
@@ -176,5 +171,5 @@ include 'includes/header.php';
     </div>
 </main>
 <?php
-include 'includes/footer.php';
+include '../includes/footer.php';
 ?>

@@ -1,7 +1,7 @@
 <?php
 session_start();
 $titulo_pagina = "Cadastro";
-include 'includes/header.php';
+include '../includes/header.php';
 ?>
 
 <main>
@@ -11,30 +11,25 @@ include 'includes/header.php';
 
                 <h2 class="text-center mb-4">CRIE SUA CONTA</h2>
 
-                <form class="formulario-container">
+                <form class="formulario-container" action="../actions/processa_cadastro.php" method="POST">
                     <div class="mb-3">
                         <label for="nome" class="form-label">Nome Completo:</label>
-                        <input type="text" class="form-control" id="nome" required>
+                        <input type="text" class="form-control" id="nome" name="nome" required>
                     </div>
 
                     <div class="mb-3">
                         <label for="telefone" class="form-label">Telefone:</label>
-                        <input type="tel" class="form-control" id="telefone" required>
+                        <input type="tel" class="form-control" id="telefone" name="telefone" required>
                     </div>
 
                     <div class="mb-3">
                         <label for="email" class="form-label">E-mail:</label>
-                        <input type="email" class="form-control" id="email" required>
+                        <input type="email" class="form-control" id="email" name="email" required>
                     </div>
 
                     <div class="mb-3">
                         <label for="senha" class="form-label">Senha:</label>
-                        <input type="password" class="form-control" id="senha" required>
-                    </div>
-
-                    <div class="mb-4">
-                        <label for="confirmar-senha" class="form-label">Confirmar Senha:</label>
-                        <input type="password" class="form-control" id="confirmar-senha" required>
+                        <input type="password" class="form-control" id="senha" name="senha" required>
                     </div>
 
                     <div class="d-grid gap-2">
@@ -52,5 +47,5 @@ include 'includes/header.php';
 </main>
 
 <?php
-include 'includes/footer.php';
+include '../includes/footer.php';
 ?>

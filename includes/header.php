@@ -9,7 +9,7 @@
     <title><?php echo $titulo_pagina; ?> | BIG HEAD TATTOO</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/pti_tattoo/css/style.css">
 </head>
 
 <body>
@@ -17,8 +17,8 @@
     <header class="p-3">
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
-                <a class="navbar-brand logo-cabecalho" href="index.php">
-                    <img src="imagens/logo.png" alt="Logo Big Head Tattoo">
+                <a class="navbar-brand logo-cabecalho" href="/pti_tattoo/index.php">
+                    <img src="/pti_tattoo/imagens/logo.png" alt="Logo Big Head Tattoo">
                 </a>
             </div>
 
@@ -29,9 +29,9 @@
             <div class="container-fluid px-0">
                 <div class="collapse navbar-collapse justify-content-center" id="menuPrincipal">
                     <ul class="navbar-nav d-flex justify-content-center gap-4 w-100" style="max-width: 500px; margin: 0 auto;">
-                        <li class="nav-item"><a class="nav-link" href="portfolio.php">Portfólio</a></li>
-                        <li class="nav-item"><a class="nav-link text-center" href="artista.php">O Artista</a></li>
-                        <li class="nav-item"><a class="nav-link" href="agenda.php">Agenda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/pti_tattoo/pages/portfolio.php">Portfólio</a></li>
+                        <li class="nav-item"><a class="nav-link text-center" href="/pti_tattoo/pages/artista.php">O Artista</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/pti_tattoo/pages/agenda.php">Agenda</a></li>
                     </ul>
                 </div>
             </div>
@@ -53,11 +53,11 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="logout.php">Sair</a>
+                            <a class="nav-link" href="/pti_tattoo/pages/logout.php">Sair</a>
                         </li>
                     <?php else: ?>
                         <li class="nav-item">
-                            <a class="nav-link" href="login.php">Login</a>
+                            <a class="nav-link" href="/pti_tattoo/pages/login.php">Login</a>
                         </li>
                     <?php endif; ?>
                 </ul>
@@ -72,8 +72,8 @@
         if ($_SESSION['user_role'] == 'cliente'): ?>
             <div class="submenu-painel">
                 <div class="container d-flex justify-content-center">
-                    <a href="dashboard-cliente.php">Painel Inicial</a>
-                    <a href="agendamentos-cliente.php">Agendamentos</a>
+                    <a href="/pti_tattoo/pages/dashboard-cliente.php">Painel Inicial</a>
+                    <a href="/pti_tattoo/pages/agendamentos-cliente.php">Agendamentos</a>
                 </div>
             </div>
 
@@ -81,10 +81,10 @@
         elseif ($_SESSION['user_role'] == 'artista'): ?>
             <div class="submenu-painel">
                 <div class="container d-flex justify-content-center">
-                    <a href="dashboard-artista.php">Painel Inicial</a>
-                    <a href="agenda-artista.php">Gerenciar Agenda</a>
-                    <a href="portfolio-artista.php">Gerenciar Portfólio</a>
-                    <a href="relatorios-artista.php">Relatórios</a>
+                    <a href="/pti_tattoo/pages/dashboard-artista.php">Painel Inicial</a>
+                    <a href="/pti_tattoo/pages/agenda-artista.php">Gerenciar Agenda</a>
+                    <a href="/pti_tattoo/pages/portfolio-artista.php">Gerenciar Portfólio</a>
+                    <a href="/pti_tattoo/pages/relatorios-artista.php">Relatórios</a>
                 </div>
             </div>
         <?php endif; ?>

@@ -1,7 +1,7 @@
 <?php
 session_start();
 $titulo_pagina = "Login";
-include 'includes/header.php';
+include '../includes/header.php';
 ?>
 
 <main>
@@ -11,15 +11,26 @@ include 'includes/header.php';
 
                 <h2 class="text-center mb-4">ACESSAR SUA CONTA</h2>
 
-                <form class="formulario-container">
+                <?php
+                // Exibe mensagem de sucesso após o cadastro
+                if (isset($_GET['status']) && $_GET['status'] == 'cadastrado') {
+                    echo '<div class="alert alert-success">Cadastro realizado com sucesso! Faça o login.</div>';
+                }
+                // Exibe mensagem de erro de login
+                if (isset($_GET['erro']) && $_GET['erro'] == '1') {
+                    echo '<div class="alert alert-danger">E-mail ou senha inválidos.</div>';
+                }
+                ?>
+
+                <form class="formulario-container" action="../actions/processa_login.php" method="POST">
                     <div class="mb-3">
                         <label for="email" class="form-label">E-mail:</label>
-                        <input type="email" class="form-control" id="email" required>
+                        <input type="email" class="form-control" id="email" name="email" required>
                     </div>
 
                     <div class="mb-3">
                         <label for="senha" class="form-label">Senha:</label>
-                        <input type="password" class="form-control" id="senha" required>
+                        <input type="password" class="form-control" id="senha" name="senha" required>
                         <div class="text-left mt-3">
                             <a href="recuperar-senha.php" class="text-white-50 small">Esqueci minha senha</a>
                         </div>
@@ -40,5 +51,5 @@ include 'includes/header.php';
 </main>
 
 <?php
-include 'includes/footer.php';
+include '../includes/footer.php';
 ?>

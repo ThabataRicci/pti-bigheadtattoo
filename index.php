@@ -8,7 +8,7 @@ include 'includes/header.php';
     <section class="secao-principal d-flex justify-content-center align-items-center text-center">
         <div class="container">
             <h1 class="display-3">BIG HEAD TATTOO</h1>
-            <a href="agenda.php" class="btn btn-outline-light btn-lg mt-3">VER AGENDA</a>
+            <a href="pages/agenda.php" class="btn btn-outline-light btn-lg mt-3">VER AGENDA</a>
         </div>
     </section>
 
@@ -22,7 +22,7 @@ include 'includes/header.php';
         <div class="row">
             <div class="col-lg-3 col-md-4 col-6 mb-4">
                 <div class="portfolio-item">
-                    <img src="imagens/exemplo1.jpg">
+                    <img src="/pti_tattoo/imagens/exemplo1.jpg">
                     <div class="portfolio-detalhes-overlay">
                         <h5 class="detalhes-titulo">Dragão</h5>
                         <p class="detalhes-info">Estilo: Oriental</p>
@@ -33,7 +33,7 @@ include 'includes/header.php';
             </div>
             <div class="col-lg-3 col-md-4 col-6 mb-4">
                 <div class="portfolio-item">
-                    <img src="imagens/exemplo2.jpg">
+                    <img src="/pti_tattoo/imagens/exemplo2.jpg">
                     <div class="portfolio-detalhes-overlay">
                         <h5 class="detalhes-titulo">Rosa</h5>
                         <p class="detalhes-info">Estilo: Fineline</p>
@@ -49,7 +49,7 @@ include 'includes/header.php';
                 <div class="portfolio-item"></div>
             </div>
             <div class="d-flex justify-content-center mt-4">
-                <a href="portfolio.php" class="btn btn-outline-light">VER PORTFÓLIO COMPLETO</a>
+                <a href="/pti_tattoo/pages/portfolio.php" class="btn btn-outline-light">VER PORTFÓLIO COMPLETO</a>
             </div>
 
     </section>

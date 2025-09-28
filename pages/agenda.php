@@ -1,9 +1,7 @@
 <?php
 session_start();
 $titulo_pagina = "Agenda";
-include 'includes/header.php';
-
-// --- LÓGICA DO CALENDÁRIO DINÂMICO ---
+include '../includes/header.php';
 
 $ANO_VISUALIZACAO = 2025;
 $ANO_ATIVO = 2025;
@@ -126,5 +124,5 @@ function gerar_link_dia($data)
 </main>
 
 <?php
-include 'includes/footer.php';
+include '../includes/footer.php';
 ?>

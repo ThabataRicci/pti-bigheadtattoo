@@ -23,7 +23,7 @@ h2,
 /* 4 - SECAO PRINCIPAL */
 .secao-principal {
     min-height: 80vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../imagens/foto_principal.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/pti_tattoo/imagens/foto_principal.jpg");
     background-size: cover;
     background-position: center;
     color: white;
