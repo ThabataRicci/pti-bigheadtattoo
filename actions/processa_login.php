@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $senha_digitada = trim($_POST['senha']);
 
     if (empty($email) || empty($senha_digitada)) {
-        header("location: login.php?erro=1");
+        header("location: ../pages/login.php?erro=1");
         exit();
     }
 

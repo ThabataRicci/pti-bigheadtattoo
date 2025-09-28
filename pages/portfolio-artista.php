@@ -16,7 +16,7 @@ include '../includes/header.php';
 
             <div class="col-lg-3 col-md-4 col-6 mb-4">
                 <div class="portfolio-item">
-                    <img src="imagens/exemplo1.jpg" alt="Tatuagem de Dragão">
+                    <img src="/pti_tattoo/imagens/exemplo1.jpg" alt="Tatuagem de Dragão">
                     <div class="portfolio-detalhes-overlay">
                         <h5 class="detalhes-titulo">Dragão</h5>
                         <p class="detalhes-info">Estilo: Oriental</p>
@@ -32,7 +32,7 @@ include '../includes/header.php';
 
             <div class="col-lg-3 col-md-4 col-6 mb-4">
                 <div class="portfolio-item">
-                    <img src="imagens/exemplo2.jpg" alt="Tatuagem de Rosa">
+                    <img src="/pti_tattoo/imagens/exemplo2.jpg" alt="Tatuagem de Rosa">
                     <div class="portfolio-detalhes-overlay">
                         <h5 class="detalhes-titulo">Rosa</h5>
                         <p class="detalhes-info">Estilo: Fineline</p>

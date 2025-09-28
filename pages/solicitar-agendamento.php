@@ -12,7 +12,7 @@ $data_formatada = date('d/m/Y', strtotime($data_selecionada));
     <div class="container my-5 py-5">
         <div class="row justify-content-center">
             <div class="col-md-8 col-lg-7">
-                <form class="formulario-container text-center" action="actions/processa_solicitacao.php" method="POST" enctype="multipart/form-data">
+                <<form class="formulario-container text-center" action="../actions/processa_solicitacao.php" method="POST" enctype="multipart/form-data">
                     <h2 class="mb-3">Agendamento: <?php echo $data_formatada; ?></h2>
 
                     <div class="text-start">
@@ -49,7 +49,7 @@ $data_formatada = date('d/m/Y', strtotime($data_selecionada));
                     <div class="d-grid mt-4">
                         <button type="submit" class="btn btn-primary">ENVIAR IDEIA PARA ANÁLISE</button>
                     </div>
-                </form>
+                    </form>
             </div>
         </div>
     </div>
