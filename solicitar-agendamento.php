@@ -20,25 +20,16 @@ $data_formatada = date('d/m/Y', strtotime($data_selecionada));
                         <div class="row">
                             <div class="col-md-6 mb-3">
                                 <label for="local_corpo" class="form-label">Local do Corpo:</label>
-                                <select class="form-select" id="local_corpo" name="local_corpo" required>
-                                    <option value="" selected disabled>Selecione o local...</option>
-                                    <option value="antebraco">Antebraço</option>
-                                    <option value="braco">Braço (Ombro/Bíceps/Tríceps)</option>
-                                    <option value="costas">Costas</option>
-                                    <option value="peito">Peito</option>
-                                    <option value="perna">Perna (Coxa/Panturrilha)</option>
-                                    <option value="mao_pe">Mão ou Pé</option>
-                                    <option value="outro">Outro</option>
-                                </select>
+                                <input type="text" class="form-control" id="local_corpo" name="local_corpo" placeholder="Ex: Antebraço, Costas..." required>
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label for="tamanho_aproximado" class="form-label">Tamanho Aproximado:</label>
                                 <select class="form-select" id="tamanho_aproximado" name="tamanho_aproximado" required>
                                     <option value="" selected disabled>Selecione o tamanho...</option>
-                                    <option value="pequeno">Pequeno (até 10cm)</option>
-                                    <option value="medio">Médio (até 20cm)</option>
-                                    <option value="grande">Grande (acima de 20cm)</option>
-                                    <option value="fechamento">Fechamento (braço, perna, etc.)</option>
+                                    <option value="Pequeno (até 10cm)">Pequeno (até 10cm)</option>
+                                    <option value="Médio (11cm a 20cm)">Médio (11cm a 20cm)</option>
+                                    <option value="Grande (acima de 20cm)">Grande (acima de 20cm)</option>
+                                    <option value="Fechamento">Fechamento (braço, perna, etc.)</option>
                                 </select>
                             </div>
                         </div>
